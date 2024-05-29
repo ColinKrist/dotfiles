@@ -1,0 +1,28 @@
+# load node on cmd open
+eval "$(fnm env --use-on-cd --corepack-enabled)"
+
+# web dev commands
+alias s="npm run start-wildcard"
+alias d="npm run dev"
+alias i="npm i --"
+alias il="npm i --legacy-peer-deps --"
+alias t="npm run test"
+
+# git commands
+alias f="git fetch"
+alias p="git pull"
+alias cm="git checkout master"
+alias cmp="cm && p"
+alias mm="git merge origin/master"
+alias fmm="f && mm"
+alias pu="git push"
+alias c="git checkout"
+alias cnb="git checkout -b"
+
+# editing bash commands
+alias rb=". ~/.bashrc"
+alias eb="vim ~/.bashrc"
+alias pb="cat ~/.bashrc"
+
+# auto creates branch when pushing
+git config --global --add --bool push.autoSetupRemote true
