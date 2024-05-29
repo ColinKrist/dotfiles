@@ -1,0 +1,7 @@
+[user]
+	name = Colin Krist
+	email = colinkrist97@gmail.com
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
